@@ -2,6 +2,7 @@ import numpy as np
 import pandas as pd
 import catboost as cat
 import pickle
+import streamlit as st
 
 #leading the saved model
 loaded_model = pickle.load(open('game_model.sav','rb')) 
