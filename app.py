@@ -28,7 +28,7 @@ if __name__ == '__main__':
     platform_options = ['Wii', 'DS', 'X360', 'PS3', 'PS2', 'PS4', '3DS', 'PS', 'X', 'PC',
        'PSP', 'WiiU', 'GC', 'GBA', 'XOne', 'PSV', 'DC']
     Platform = st.selectbox("Select your Platform:", options = platform_options)
-    Year_of_Release = st.text_input('Release Date:')
+    Year_of_Release = st.number_input('Release Date:'min_value=1976, max_value=2017)
     genre_options = ['Sports', 'Racing', 'Platform', 'Misc', 'Action', 'Puzzle','Shooter', 'Fighting', 'Simulation', 'Role-Playing', 'Adventure','Strategy']
     Genre = st.selectbox("Select the genre:", options = genre_options)
     publisher_options = ['Nintendo', 'Microsoft Game Studios', 'Take-Two Interactive',
@@ -117,8 +117,8 @@ if __name__ == '__main__':
        'G.Rev', 'Milkstone Studios', 'Her Interactive', 'Team Meat']
     Publisher = st.selectbox("Select the Publisher:", options = publisher_options)
     rating_options = ['E', 'M', 'T', 'E10+', 'AO', 'K-A', 'RP']
-    Critic_Score = st.text_input('Score of the game (Critic):')
-    User_Score = st.text_input('Score of the game (User):')
+    Critic_Score = st.number_input('Score of the game (Critic):', min_value=0, max_value=100)
+    User_Score = st.number_input('Score of the game (User):', min_value=0, max_value=10)
     Rating = st.selectbox("Select the Rating:", options = rating_options)
 
     #code for Prediction
