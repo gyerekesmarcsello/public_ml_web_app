@@ -129,6 +129,9 @@ def main():
 
     st.succes(sales)
 
+if __name__ == '__main__':
+    main()
+
     
 
 
