@@ -28,7 +28,7 @@ if __name__ == '__main__':
     platform_options = ['Wii', 'DS', 'X360', 'PS3', 'PS2', 'PS4', '3DS', 'PS', 'X', 'PC',
        'PSP', 'WiiU', 'GC', 'GBA', 'XOne', 'PSV', 'DC']
     Platform = st.selectbox("Select your Platform:", options = platform_options)
-    Year_of_Release = st.number_input('Release Date:'min_value=1976, max_value=2017)
+    Year_of_Release = st.number_input('Release Date:', min_value=1976, max_value=2017)
     genre_options = ['Sports', 'Racing', 'Platform', 'Misc', 'Action', 'Puzzle','Shooter', 'Fighting', 'Simulation', 'Role-Playing', 'Adventure','Strategy']
     Genre = st.selectbox("Select the genre:", options = genre_options)
     publisher_options = ['Nintendo', 'Microsoft Game Studios', 'Take-Two Interactive',
