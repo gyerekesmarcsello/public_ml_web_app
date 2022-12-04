@@ -11,7 +11,7 @@ loaded_model = pickle.load(open('game_model.sav','rb'))
 def videogamesale_prediction(input_data):
     input_data_as_numpy_array = np.asarray(input_data)
     input_data_reshaped = input_data_as_numpy_array.reshape(1,-1)
-    prediction = loaded_model.predict(input_data_as_numpy_array)
+    prediction = loaded_model.predict(input_data_reshaped)
     print(prediction)
 
     return prediction
@@ -124,10 +124,10 @@ if __name__ == '__main__':
 
     # creating a button for Prediction
     if st.button('Video Game Sale Prediction'):
-        sales = videogamesale_prediction([Platform,Year_of_Release,Genre,Publisher,Critic_Score,User_Score,Rating])
+        sales = videogamesale_prediction([Genre,Year_of_Release,Critic_Score,Publisher,Platform,Rating,User_Score])
 
     st.success('Predicted Global Sales in millions: {0}'.format(sales))
 
     
-
+Genre
 
