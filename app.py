@@ -22,8 +22,6 @@ def main():
     st.title('Video Game Sale Prediction Web App')
 
     #getting the input data from the user
-    Platform,Year_of_Release,Genre,Publisher,Critic_Score,User_Score,Rating
-
     platform_options = ['Wii', 'DS', 'X360', 'PS3', 'PS2', 'PS4', '3DS', 'PS', 'X', 'PC',
        'PSP', 'WiiU', 'GC', 'GBA', 'XOne', 'PSV', 'DC']
     Platform = st.selectbox("Select your Platform:", options = platform_options)
