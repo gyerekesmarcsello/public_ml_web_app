@@ -4,7 +4,7 @@ import catboost as cat
 import pickle
 import streamlit as st
 
-st.beta_set_page_congig(page_title="Hello World", page_icon='👾')
+st.set_page_config(page_title="Hello World", page_icon='👾')
 #leading the saved model
 loaded_model = pickle.load(open('game_model.sav','rb')) 
 
