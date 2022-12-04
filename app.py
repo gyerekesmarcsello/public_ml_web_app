@@ -16,7 +16,7 @@ def videogamesale_prediction(input_data):
     print(prediction)
 
 
-def main():
+if __name__ == '__main__':
 
     #giving a title
     st.title('Video Game Sale Prediction Web App')
@@ -126,9 +126,6 @@ def main():
         sales = videogamesale_prediction([Platform,Year_of_Release,Genre,Publisher,Critic_Score,User_Score,Rating])
 
     st.succes(sales)
-
-if __name__ == '__main__':
-    main()
 
     
 
