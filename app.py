@@ -15,6 +15,8 @@ def videogamesale_prediction(input_data):
     prediction = loaded_model.predict(input_data_reshaped)
     print(prediction)
 
+    return prediction
+
 
 if __name__ == '__main__':
 
@@ -125,7 +127,7 @@ if __name__ == '__main__':
     if st.button('Video Game Sale Prediction'):
         sales = videogamesale_prediction([Platform,Year_of_Release,Genre,Publisher,Critic_Score,User_Score,Rating])
 
-    st.success('This is a success message!')
+    st.success(sales)
 
     
 
