@@ -10,9 +10,6 @@ loaded_model = pickle.load(open('game_model.sav','rb'))
 
 def videogamesale_prediction(input_data):
     input_data_as_numpy_array = np.asarray(input_data)
-
-    input_data_reshaped = input_data_as_numpy_array.reshape(1,-1)
-
     prediction = loaded_model.predict(input_data_reshaped)
     print(prediction)
 
