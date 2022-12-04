@@ -118,7 +118,7 @@ if __name__ == '__main__':
     Publisher = st.selectbox("Select the Publisher:", options = publisher_options)
     rating_options = ['E', 'M', 'T', 'E10+', 'AO', 'K-A', 'RP']
     Critic_Score = st.number_input('Score of the game (Critic):', min_value=0, max_value=100)
-    User_Score = st.number_input('Score of the game (User):', min_value=0.0, max_value=10.0,step=1.,format="%.2f")
+    User_Score = st.number_input('Score of the game (User):', min_value=0.0, max_value=10.0,step=0.1,format="%.2f")
     Rating = st.selectbox("Select the Rating:", options = rating_options)
 
     #code for Prediction
