@@ -4,7 +4,7 @@ import catboost as cat
 import pickle
 import streamlit as st
 
-st.set_page_config(page_title="Hello World", page_icon='👾')
+st.set_page_config(page_title="Video Game Sale Prediction Web App", page_icon='👾')
 #leading the saved model
 loaded_model = pickle.load(open('game_model.sav','rb')) 
 
@@ -22,7 +22,7 @@ def videogamesale_prediction(input_data):
 if __name__ == '__main__':
 
     #giving a title
-    st.title('Video Game Sale Prediction Web App')
+    st.title('Video Game Sale Prediction Web App 👾')
 
     #getting the input data from the user
     platform_options = ['Wii', 'DS', 'X360', 'PS3', 'PS2', 'PS4', '3DS', 'PS', 'X', 'PC',
