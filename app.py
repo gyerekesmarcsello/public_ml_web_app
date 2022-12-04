@@ -44,6 +44,3 @@ if __name__ == '__main__':
 
     st.success('Predicted Global Sales in millions: {0}'.format(sales))
 
-    
-Genre
-
