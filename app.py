@@ -125,7 +125,7 @@ if __name__ == '__main__':
     if st.button('Video Game Sale Prediction'):
         sales = videogamesale_prediction([Platform,Year_of_Release,Genre,Publisher,Critic_Score,User_Score,Rating])
 
-    st.succes(sales)
+    st.success('This is a success message!')
 
     
 
