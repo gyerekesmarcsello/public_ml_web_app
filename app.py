@@ -37,10 +37,14 @@ if __name__ == '__main__':
 
     #code for Prediction
     sales = ''
+    predicted_value = videogamesale_prediction([Genre,Year_of_Release,Critic_Score,Publisher,Platform,Rating,User_Score])
 
     # creating a button for Prediction
     if st.button('Video Game Sale Prediction'):
-        sales = videogamesale_prediction([Genre,Year_of_Release,Critic_Score,Publisher,Platform,Rating,User_Score])
+        if predicted_value > 0:
+            sales = predicted_value
+        else:
+            sales = 'Too Low'
 
     st.success('Predicted Global Sales in millions: {0}'.format(sales))
 
