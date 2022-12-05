@@ -45,6 +45,5 @@ if __name__ == '__main__':
             sales = predicted_value
         else:
             sales = 'Too Low'
-
-    st.success('Predicted Global Sales in millions: {0}'.format(sales))
+        st.success('Predicted Global Sales in millions: {0}'.format(sales))
 
