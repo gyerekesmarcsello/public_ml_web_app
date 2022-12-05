@@ -37,7 +37,7 @@ if __name__ == '__main__':
 
     #code for Prediction
     sales = ''
-    predicted_value = videogamesale_prediction([Genre,Year_of_Release,Critic_Score,Publisher,Platform,Rating,User_Score])
+    predicted_value = videogamesale_prediction([Year_of_Release,Genre,Critic_Score,Publisher,Platform,User_Score,Rating])
 
     # creating a button for Prediction
     if st.button('Video Game Sale Prediction'):
